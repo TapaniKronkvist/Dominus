@@ -15,9 +15,6 @@ public class Goblin : Enemy
     protected float cooldown;
     protected Vector3 toPlayer;
     [SerializeField]
-    protected Transform movement;
-
-    [SerializeField]
     protected Vector3 bulletOffset;
 
     [SerializeField]
@@ -30,14 +27,14 @@ public class Goblin : Enemy
             if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) > range / 2)
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
-                /*movement.*/transform.Translate(transform.forward * moveSpeed * Time.deltaTime);
+                transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
                 Shoot();
 
             }
             else if(Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) <= range / 2)
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
-             /*   movement.*/transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1);
+             transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1, Space.World);
                 Shoot();
             }
         }

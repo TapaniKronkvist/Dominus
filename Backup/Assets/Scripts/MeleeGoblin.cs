@@ -22,7 +22,7 @@ public class MeleeGoblin : Goblin
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
                 toPlayer = Playermanager.ins.playerObject.transform.position - transform.position;
-              /*  movement.*/transform.Translate(toPlayer.normalized * moveSpeed * Time.deltaTime);
+                transform.Translate(toPlayer.normalized * moveSpeed * Time.deltaTime, Space.World);
                     if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < meleeRange)
                     {
                         Attack();

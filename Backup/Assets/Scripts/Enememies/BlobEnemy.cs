@@ -13,13 +13,14 @@ public class BlobEnemy : Enemy
     private void Update()
     {
 
-        transform.LookAt(Playermanager.ins.playerObject.transform.position);
-        /*if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
+        
+        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
         {
-            transform.LookAt(Playermanager.ins.playerObject.transform.position);
+           
             toPlayer = Playermanager.ins.playerObject.transform.position - transform.position;
-            transform.Translate(toPlayer * moveSpeed * Time.deltaTime);
-        }*/
+            transform.Translate(toPlayer.normalized * moveSpeed * Time.deltaTime, Space.World);
+            transform.LookAt(  Playermanager.ins.playerObject.transform.position);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
