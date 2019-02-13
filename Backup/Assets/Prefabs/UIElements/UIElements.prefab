@@ -177,7 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f3621962afa2643bfd920213cbbe03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart: {fileID: 0}
+  heart: {fileID: 841438379951941683, guid: 4b9f1f06a26518a48bdf74812cc888dd, type: 3}
+  currentHearts: []
   playerHp: 0
 --- !u!1 &7820713486336772289
 GameObject:
