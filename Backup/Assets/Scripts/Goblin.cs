@@ -18,7 +18,7 @@ public class Goblin : Enemy
     protected Vector3 bulletOffset;
 
     [SerializeField]
-   protected int projectileDamage;
+    protected int projectileDamage;
     protected virtual void Update()
     {
 
@@ -31,14 +31,14 @@ public class Goblin : Enemy
                 Shoot();
 
             }
-            else if(Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) <= range / 2)
+            else if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) <= range / 2)
             {
                 transform.LookAt(Playermanager.ins.playerObject.transform.position);
-             transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1, Space.World);
+                transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1, Space.World);
                 Shoot();
             }
         }
-        if(cooldown <= cooldownMax)
+        if (cooldown <= cooldownMax)
         {
             cooldown += Time.deltaTime;
         }
@@ -47,15 +47,15 @@ public class Goblin : Enemy
     {
         if (cooldown >= cooldownMax)
         {
-            GameObject arrow = Instantiate(arrowPrefab, transform.position + bulletOffset, transform.rotation) ;
+            GameObject arrow = Instantiate(arrowPrefab, transform.position + bulletOffset, transform.rotation);
             arrow.GetComponent<Arrow>().shooter = transform;
             arrow.GetComponent<Arrow>().damage = projectileDamage;
             cooldown = 0;
         }
-            
+
     }
-    
-    private void OnCollisionEnter(Collision collision)
+
+    public virtual void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("Coliided");
         if (collision.gameObject.CompareTag("Player"))
