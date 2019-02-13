@@ -18,6 +18,10 @@ public class ItemPickup : Item
         if (item.CanBePickedUp())
         {
             item.PickedUp();
+            if (CollectionManager.ins != null)
+            {
+                CollectionManager.ins.PickedUpItem(item);
+            }
             Destroy(gameObject);
         }
 

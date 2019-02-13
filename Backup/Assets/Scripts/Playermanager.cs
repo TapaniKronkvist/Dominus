@@ -36,7 +36,7 @@ public class Playermanager : MonoBehaviour
     {
         set
         {
-            MaxHP = value;
+            maxHP = value;
             if (currentHP > maxHP)
             {
                 currentHP = MaxHP;

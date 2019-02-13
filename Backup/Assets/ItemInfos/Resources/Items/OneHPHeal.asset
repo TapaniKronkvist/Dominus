@@ -21,4 +21,4 @@ MonoBehaviour:
 
     Heals one HP'
   healAmount: 1
-  ignoreMaxHP: 1
+  ignoreMaxHP: 0

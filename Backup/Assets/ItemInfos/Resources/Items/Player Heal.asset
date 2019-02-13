@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f4c4b442a68f04b81f42cdb928021e, type: 3}
   m_Name: Player Heal
   m_EditorClassIdentifier: 
-  worldObject: {fileID: 0}
+  worldObject: {fileID: 2773347304966287247, guid: db954f112cee4104bae6b443ee309856,
+    type: 3}
   itemName: 
   description: 
   healAmount: 1
