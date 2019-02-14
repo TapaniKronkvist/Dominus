@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Player Heal", menuName = "Consumables/Heal player", order = 1)]
+[CreateAssetMenu(fileName = "Player Heal", menuName = "Consumables/Increase max HP", order = 1)]
 public class IncreaseMaxHp : ItemInfo
 {
     [SerializeField]

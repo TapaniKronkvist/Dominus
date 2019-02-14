@@ -5,39 +5,32 @@ using UnityEngine;
 public class Magnus : Enemy
 {
     public float moveSpeed;
-    public float range;
+    public float shootRange;
     [SerializeField]
     float nrOfShots;
     [SerializeField]
     float offsetAngle;
     [SerializeField]
-    GameObject projectilePrefab;
+    GameObject projectilePrefab, deathObject;
     [SerializeField]
     protected float cooldownMax;
     protected float cooldown;
-    [SerializeField]
-    Transform firePoint;
-    [SerializeField]
-    Vector3 playeroffset;
+    //[SerializeField]
+    //Vector3 playeroffset;
 
     // Start is called before the first frame update
     public override void Start()
     {
         currentHealth = maxHealth;
-        firePoint.position = new Vector3(firePoint.position.x, 2, firePoint.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
+        
+        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < shootRange)
         {
-            transform.LookAt(Playermanager.ins.playerObject.transform.position + playeroffset);
             Shoot();
-        }
-        else if (Playermanager.ins.playerObject != null)
-        {
-            transform.LookAt(Playermanager.ins.playerObject.transform.position + playeroffset);
         }
         if (cooldown <= cooldownMax)
         {
@@ -48,13 +41,15 @@ public class Magnus : Enemy
     {
         if (cooldown >= cooldownMax)
         {
+            Vector3 projectilePosition = new Vector3(transform.position.x, Playermanager.ins.playerObject.transform.position.y, transform.position.z);
+            GameObject shot = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
             for (int i = 0; i < nrOfShots; i++)
             {
-                GameObject shot = Instantiate(projectilePrefab, firePoint.position, transform.rotation);
+                GameObject shots = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
                 shot.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, offsetAngle * (i + 1), 0) * transform.forward;
 
-                shot = Instantiate(projectilePrefab, firePoint.position, transform.rotation);
-                shot.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, -offsetAngle * (i + 1), 0) * transform.forward;
+                shots = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
+                shots.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, -offsetAngle * (i + 1), 0) * transform.forward;
             }
             cooldown = 0;
         }
@@ -72,9 +67,15 @@ public class Magnus : Enemy
         }
     }
 
+    public override void Death()
+    {
+        Instantiate(deathObject, transform.position, deathObject.transform.rotation);
+        Destroy(gameObject);
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, shootRange);
     }
 }

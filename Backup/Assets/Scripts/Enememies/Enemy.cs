@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public virtual void KnockBackPlayer()
     {
-        Debug.Log("Enemy knockback");
+       // Debug.Log("Enemy knockback");
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().KnockBackPlayer(knockBackForce, transform.position);
         Playermanager.ins.playerObject.GetComponent<PlayerMovement>().StunPlayer(stunTime);
     }

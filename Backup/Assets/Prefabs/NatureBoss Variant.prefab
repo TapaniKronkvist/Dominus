@@ -4722,6 +4722,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2132830751782522537, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: m_Name
+      value: NatureBoss Variant
+      objectReference: {fileID: 0}
     - target: {fileID: 2132830751782522536, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4777,11 +4782,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2132830751001120138, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: bossPosition
-      value: 
-      objectReference: {fileID: 7604877600106049015}
     - target: {fileID: 2132830751157857182, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4796,42 +4796,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.64596856
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: maxHealth
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: nrOfShots
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: offsetAngle
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 1799569945992340469, guid: 8d1dfadaee2d9a340a772cffadfa24ea,
-        type: 3}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 7604877600339672276}
-    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: waypoints
-      value: 
-      objectReference: {fileID: 7604877600415927267}
-    - target: {fileID: 2132830751782522537, guid: 9a88f8124547a8c419c94e6bfc81bc12,
-        type: 3}
-      propertyPath: m_Name
-      value: NatureBoss
       objectReference: {fileID: 0}
     - target: {fileID: 2132830752622192911, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
@@ -4878,6 +4842,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45.000004
       objectReference: {fileID: 0}
+    - target: {fileID: 2132830751001120138, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: bossPosition
+      value: 
+      objectReference: {fileID: 7604877600106049015}
     - target: {fileID: 2132830751157857179, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
       propertyPath: m_Enabled
@@ -4888,6 +4857,43 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a9747c7f54f0edb4bb3261671983434f, type: 2}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: maxHealth
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: nrOfShots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: offsetAngle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 1799569945992340469, guid: 8d1dfadaee2d9a340a772cffadfa24ea,
+        type: 3}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 7604877600339672276}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 7604877600415927267}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: deathObject
+      value: 
+      objectReference: {fileID: 1376361952, guid: 929d098d92a3a7d409c8fe6385e92f95,
+        type: 3}
     - target: {fileID: 2132830751857918638, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
       propertyPath: m_Enabled
@@ -5009,14 +5015,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.3096126
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 058b9a5fb2e869c4595403fda2884987, type: 2}
-    - target: {fileID: 2300002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_Bones.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 75bb742199eba0946bfbbbfb2138a9d5, type: 2}
+      objectReference: {fileID: 8363366641033272466}
+    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 8363366641033272466}
     - target: {fileID: 13700000, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
       propertyPath: m_Bones.Array.data[0]
       value: 
@@ -5033,30 +5043,6 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 8363366641033272476}
-    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 058b9a5fb2e869c4595403fda2884987, type: 2}
-    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_Bones.Array.data[0]
-      value: 
-      objectReference: {fileID: 8363366641033272466}
-    - target: {fileID: 13700002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 8363366641033272466}
-    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7794a4bc78e8b944f84f4a4c39693f7c, type: 2}
-    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_Bones.Array.data[0]
-      value: 
-      objectReference: {fileID: 8363366641033272474}
-    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
-      propertyPath: m_RootBone
-      value: 
-      objectReference: {fileID: 8363366641033272474}
     - target: {fileID: 13700006, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
       propertyPath: m_Bones.Array.data[0]
       value: 
@@ -5073,6 +5059,26 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 8363366641033272468}
+    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7794a4bc78e8b944f84f4a4c39693f7c, type: 2}
+    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_Bones.Array.data[0]
+      value: 
+      objectReference: {fileID: 8363366641033272474}
+    - target: {fileID: 13700004, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_RootBone
+      value: 
+      objectReference: {fileID: 8363366641033272474}
+    - target: {fileID: 2300002, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75bb742199eba0946bfbbbfb2138a9d5, type: 2}
+    - target: {fileID: 2300000, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 058b9a5fb2e869c4595403fda2884987, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c4904749cf85314782ee0c8dafa1ab5, type: 3}
 --- !u!4 &8363366641033272474 stripped

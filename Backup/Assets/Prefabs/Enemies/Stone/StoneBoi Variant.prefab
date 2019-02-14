@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1888076292922684391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7885066692775355657, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_Name
+      value: StoneBoi
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885066692773100493, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6cc1431fcc51bf4f88f5ed1ed293468, type: 2}
+    - target: {fileID: 7885066692773100495, guid: 925352b9391a5f9488fd05d87011361d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e9d22c34d3977c41ad79d15f0fa23b0, type: 2}
+    - target: {fileID: 1579504138, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: m_Mass
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504138, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504138, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: arrowPrefab
+      value: 
+      objectReference: {fileID: 8341495516908331747, guid: 3a3b69d40a0225b44b55e50432ea0dad,
+        type: 3}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: projectileDamage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: cooldownMax
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: range
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 925352b9391a5f9488fd05d87011361d, type: 3}

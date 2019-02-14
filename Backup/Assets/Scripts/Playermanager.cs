@@ -36,7 +36,7 @@ public class Playermanager : MonoBehaviour
     {
         set
         {
-            MaxHP = value;
+            maxHP = value;
             if (currentHP > maxHP)
             {
                 currentHP = MaxHP;
@@ -93,7 +93,7 @@ public class Playermanager : MonoBehaviour
         {
             playerObject = GameObject.FindGameObjectWithTag("Player");
         }
-        if (Input.GetKey(KeyCode.F)) { }
+//        if (Input.GetKey(KeyCode.F)) { }
 
     }
 
@@ -168,8 +168,12 @@ public class Playermanager : MonoBehaviour
 
     IEnumerator Dying(float waitTime)
     {
+        
         yield return new WaitForSeconds(waitTime);
+        Destroy(WorldManager.ins.gameObject);
+        CollectionManager.ins.AddCollectedToCollection();
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameOverSceneNumber);
+        Destroy(Playermanager.ins.gameObject);
     }
 
     public void Heal(int healAmount)

@@ -9,6 +9,7 @@ public class bossSceneMusic : MonoBehaviour
     public List<GameObject> musicTracks;
     [SerializeField] GameObject firstTrack;
     [SerializeField] GameObject secondTrack;
+    [SerializeField] BossSpawner spawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,11 @@ public class bossSceneMusic : MonoBehaviour
         {
             Destroy(firstTrack);
             secondTrack = Instantiate(musicTracks[1], transform.position, Quaternion.identity);
+            spawner.ActivateBoss();
+            Camera.main.orthographicSize *= 2;
         }
 
-        Camera.main.orthographicSize *= 2;
+
     }
 
 }

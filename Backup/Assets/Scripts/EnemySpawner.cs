@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     //[Range(0, 10)]
     //[SerializeField]
     //int maxNumberOfEnemies = 10;
-    //[SerializeField]
+    [SerializeField]
     float spawnRadius;
 
 
