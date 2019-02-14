@@ -1019,6 +1019,8 @@ MonoBehaviour:
   offsetAngle: 5
   projectilePrefab: {fileID: 5424248405917016573, guid: 10d23b9ace930a845b8df75bf31eee1f,
     type: 3}
+  deathObject: {fileID: 3562428193485218198, guid: dbd40d4ff86de124f9dd8da4f5075fba,
+    type: 3}
   cooldownMax: 1
 --- !u!114 &3351483620281108264
 MonoBehaviour:

@@ -11,7 +11,7 @@ public class Magnus : Enemy
     [SerializeField]
     float offsetAngle;
     [SerializeField]
-    GameObject projectilePrefab;
+    GameObject projectilePrefab, deathObject;
     [SerializeField]
     protected float cooldownMax;
     protected float cooldown;
@@ -65,6 +65,12 @@ public class Magnus : Enemy
             DamagePlayer();
             KnockBackPlayer();
         }
+    }
+
+    public override void Death()
+    {
+        Instantiate(deathObject, transform.position, deathObject.transform.rotation);
+        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()

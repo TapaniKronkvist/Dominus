@@ -45,11 +45,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentProjectile: {fileID: 7130287907467182538, guid: faa74df86c758b24cba50ca68698f59d,
     type: 3}
+  baseDamage: 1
   currentDamage: 1
   baseMovementSpeed: 10
   movementSpeedModifier: 1
+  projectileSpeedModifier: 1
+  timeBetweenShotsModifier: 1
+  postDamageInvulTimeModifier: 1
+  damageModifier: 1
   playerEquipment: []
+  selectedElemen: 3
+  gameOverSceneNumber: 8
   maxHP: 3
+  currentHP: 0
   basePostDamageInvulTime: 1
   baseTimeBetweenShots: 0.5
   xAxis: 0

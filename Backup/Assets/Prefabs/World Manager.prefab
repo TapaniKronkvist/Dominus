@@ -293,6 +293,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     enemyGroups:
     - name: 
       enemies:
@@ -321,6 +326,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5068862c546498446bd1b7760676008e, type: 2}
     - {fileID: 11400000, guid: dbcfa3cc20549d44e8f14f3f361976c4, type: 2}
     - {fileID: 11400000, guid: dbcfa3cc20549d44e8f14f3f361976c4, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
@@ -381,6 +391,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5068862c546498446bd1b7760676008e, type: 2}
     - {fileID: 11400000, guid: dbcfa3cc20549d44e8f14f3f361976c4, type: 2}
     - {fileID: 11400000, guid: dbcfa3cc20549d44e8f14f3f361976c4, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
+    - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
     - {fileID: 11400000, guid: 58935f67b1fdfab4c986a3292a4a8b18, type: 2}
@@ -572,4 +587,4 @@ MonoBehaviour:
       - {fileID: 7207057585093138366, guid: f78f1132d78f46540a2c6aa9362431b3, type: 3}
   overworldSceneNum: 2
   dungeonSceneNum: 3
-  magnusSceneNum: 0
+  magnusSceneNum: 5
