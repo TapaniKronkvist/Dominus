@@ -10,6 +10,7 @@ public class LookAtCamera : MonoBehaviour
     {
         if (Camera.main != null)
         {
+            Vector3 look = new Vector3(this.transform.position.x, Camera.main.transform.position.y,this.transform.position.z);
             transform.LookAt(Camera.main.transform.position);
         }
     }
