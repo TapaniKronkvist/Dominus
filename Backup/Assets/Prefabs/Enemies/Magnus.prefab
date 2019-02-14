@@ -1020,7 +1020,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 5424248405917016573, guid: 10d23b9ace930a845b8df75bf31eee1f,
     type: 3}
   cooldownMax: 1
-  firePoint: {fileID: 0}
 --- !u!114 &3351483620281108264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,7 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnus: {fileID: 6195858723143248200}
-  stopRange: 7
+  stopRange: 15
 --- !u!54 &6195858723143248197
 Rigidbody:
   m_ObjectHideFlags: 0
