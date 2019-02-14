@@ -117,7 +117,7 @@ MonoBehaviour:
   cooldownMax: 1
   bulletOffset: {x: 0, y: 0, z: 0}
   projectileDamage: 0
-  meleeRange: 1.5
+  meleeRange: 1
 --- !u!1001 &2909782840253243462
 PrefabInstance:
   m_ObjectHideFlags: 0
