@@ -5051,6 +5051,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1376361952, guid: bc865947336f5364b919cbef8d50d8ae,
         type: 3}
+    - target: {fileID: 2132830751157857177, guid: 9a88f8124547a8c419c94e6bfc81bc12,
+        type: 3}
+      propertyPath: maxHealth
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 2132830751857918638, guid: 9a88f8124547a8c419c94e6bfc81bc12,
         type: 3}
       propertyPath: m_Enabled

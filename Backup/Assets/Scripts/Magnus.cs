@@ -36,6 +36,13 @@ public class Magnus : Enemy
         {
             cooldown += Time.deltaTime;
         }
+
+
+        if (GameObject.Find("BossHP"))
+        {
+            GameObject.Find("BossHP").GetComponent<BossHealthBar>().ChangeSlider(currentHealth / maxHealth);
+        }
+
     }
     void Shoot()
     {

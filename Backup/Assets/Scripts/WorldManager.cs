@@ -35,21 +35,19 @@ public class WorldManager : MonoBehaviour
 
     public void LoadOverWorld()
     {
-
-        SceneManager.LoadScene(overworldSceneNum);
-    }
-    public void LoadDungeon(Bosses state)
-    {
         if (defeatedBosses.Contains(Bosses.fire) && defeatedBosses.Contains(Bosses.nature) && defeatedBosses.Contains(Bosses.stone))
         {
             SceneManager.LoadScene(magnusSceneNum);
         }
         else
-        {
+            SceneManager.LoadScene(overworldSceneNum);
+    }
+    public void LoadDungeon(Bosses state)
+    {
 
             SceneManager.LoadScene(dungeonSceneNum);
             stateToLoad = state;
-        }
+        
     }
     public void DungeonLoaded()
     {
@@ -136,7 +134,7 @@ public class WorldManager : MonoBehaviour
         Debug.Log("Items");
         if (defeatedBosses.Count > 0)
         {
-            
+
             switch (defeatedBosses[defeatedBosses.Count - 1])
             {
                 case Bosses.fire:
@@ -207,7 +205,7 @@ public class WorldState
     public string name;
     [SerializeField]
     public List<Pickup> itemDropTable = new List<Pickup>();
-  //  public List<Pickup> ItemDropTable { get => itemDropTable; }
+    //  public List<Pickup> ItemDropTable { get => itemDropTable; }
 
     [SerializeField]
     List<GroupOfEnemies> enemyGroups = new List<GroupOfEnemies>();
