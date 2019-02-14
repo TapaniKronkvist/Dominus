@@ -2006,11 +2006,6 @@ PrefabInstance:
       propertyPath: howTo
       value: 
       objectReference: {fileID: 1297914456}
-    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
-        type: 3}
-      propertyPath: waitTime
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 7320794493618194781, guid: 2e09c91e27c8af444a73477d498cded7,
         type: 3}
       propertyPath: m_LocalPosition.x
