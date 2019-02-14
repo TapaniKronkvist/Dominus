@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldObject: {fileID: 3843846210279420362, guid: 5b51802c309b1e54ca7c522d603165b3,
     type: 3}
-  itemName: Blazing Boots
-  description: Increases movement speed by 35%
+  itemName: 'Incendium '
+  description: 'Fast like Wildfire
+
+    ---
+
+    Increase movement speed by 20%'
   conflictingItems: []
   allowDuplicates: 0
-  modifier: 1.35
+  modifier: 1.2

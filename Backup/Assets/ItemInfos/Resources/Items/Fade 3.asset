@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldObject: {fileID: 4674728177105566265, guid: 557dd076e83d2b54a8dcf6ca057fb66d,
     type: 3}
-  itemName: Carved Fade
-  description: '
+  itemName: Transformatio pulvis
+  description: 'Become like a small sandstorm
 
     ---
 

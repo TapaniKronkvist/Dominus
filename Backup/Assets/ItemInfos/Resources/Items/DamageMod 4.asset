@@ -9,17 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612953c8bc5a4e8409885d4d95815f5d, type: 3}
-  m_Name: ProjectileSpeedMod
+  m_Script: {fileID: 11500000, guid: 64088e263e3759b4485a748802cbd186, type: 3}
+  m_Name: DamageMod 4
   m_EditorClassIdentifier: 
-  worldObject: {fileID: 4483035785903718143, guid: 66881b6ebcffcd04ca2d61320af58ba8,
+  worldObject: {fileID: 2811144140927288037, guid: a5553aa48a8df7f448e15843bdf48e13,
     type: 3}
-  itemName: Celeritate ardentis
-  description: 'Fire spells at the speed of fire
+  itemName: Petra Iactus
+  description: 'Getting hit by a rock hurts!
 
     ---
 
-    Increases Projectile Speed by 20%'
+    Damage Increase by 30%'
   conflictingItems: []
   allowDuplicates: 0
-  modifier: 1.2
+  modifier: 1.3
