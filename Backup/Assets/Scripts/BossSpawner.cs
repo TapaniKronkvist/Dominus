@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossSpawner : MonoBehaviour
 {
+    GameObject newBoss;
     private void Start()
     {
         if (GetComponent<MeshRenderer>())
@@ -13,8 +14,15 @@ public class BossSpawner : MonoBehaviour
     }
     public void SpawnBoss(GameObject boss)
     {
-        GameObject newBoss = Instantiate(boss);
+         newBoss = Instantiate(boss);
+        newBoss.SetActive(false);
         boss.transform.position = transform.position;
         boss.transform.rotation = transform.rotation;
     }
+
+    public void ActivateBoss()
+    {
+        newBoss.SetActive(true);
+    }
+
 }

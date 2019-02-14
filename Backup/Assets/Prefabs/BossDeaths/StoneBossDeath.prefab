@@ -4885,6 +4885,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatenBoss: 2
-  timeTillDone: 100
+  timeTillDone: 5
   beamUpSpeed: 35
   line: {fileID: 1200932418}
