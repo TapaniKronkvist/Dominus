@@ -15,7 +15,11 @@ MonoBehaviour:
   worldObject: {fileID: 3843846210279420362, guid: 5b51802c309b1e54ca7c522d603165b3,
     type: 3}
   itemName: Invigorated Boots
-  description: Increases movement speed by 30%
+  description: 'These boots weren''t just made for walking
+
+    ---
+
+    Increases movement speed by 30%'
   conflictingItems: []
   allowDuplicates: 0
   modifier: 1.3

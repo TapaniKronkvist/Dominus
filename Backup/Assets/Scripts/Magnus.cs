@@ -15,8 +15,6 @@ public class Magnus : Enemy
     [SerializeField]
     protected float cooldownMax;
     protected float cooldown;
-    [SerializeField]
-    Transform firePoint;
     //[SerializeField]
     //Vector3 playeroffset;
 
@@ -24,7 +22,6 @@ public class Magnus : Enemy
     public override void Start()
     {
         currentHealth = maxHealth;
-        firePoint.position = new Vector3(firePoint.position.x, 2, firePoint.position.z);
     }
 
     // Update is called once per frame
@@ -35,9 +32,6 @@ public class Magnus : Enemy
         {
             Shoot();
         }
-        else if (Playermanager.ins.playerObject != null)
-        {
-        }
         if (cooldown <= cooldownMax)
         {
             cooldown += Time.deltaTime;
@@ -47,13 +41,15 @@ public class Magnus : Enemy
     {
         if (cooldown >= cooldownMax)
         {
+            Vector3 projectilePosition = new Vector3(transform.position.x, Playermanager.ins.playerObject.transform.position.y, transform.position.z);
+            GameObject shot = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
             for (int i = 0; i < nrOfShots; i++)
             {
-                GameObject shot = Instantiate(projectilePrefab, firePoint.position, transform.rotation);
+                GameObject shots = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
                 shot.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, offsetAngle * (i + 1), 0) * transform.forward;
 
-                shot = Instantiate(projectilePrefab, firePoint.position, transform.rotation);
-                shot.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, -offsetAngle * (i + 1), 0) * transform.forward;
+                shots = Instantiate(projectilePrefab, projectilePosition, transform.rotation);
+                shots.GetComponent<Arrow>().lookDir = Quaternion.Euler(0, -offsetAngle * (i + 1), 0) * transform.forward;
             }
             cooldown = 0;
         }
