@@ -20,7 +20,7 @@ public class WorldManager : MonoBehaviour
     WorldState[] overWorldStates = new WorldState[4] { new WorldState("neutral"), new WorldState("fire"), new WorldState("nature"), new WorldState("stone") };
 
     [SerializeField]
-    int overworldSceneNum, dungeonSceneNum;
+    int overworldSceneNum, dungeonSceneNum, magnusSceneNum;
 
     void Awake()
     {
@@ -40,8 +40,16 @@ public class WorldManager : MonoBehaviour
     }
     public void LoadDungeon(Bosses state)
     {
-        SceneManager.LoadScene(dungeonSceneNum);
-        stateToLoad = state;
+        if (defeatedBosses.Contains(Bosses.fire) && defeatedBosses.Contains(Bosses.nature) && defeatedBosses.Contains(Bosses.stone))
+        {
+            SceneManager.LoadScene(magnusSceneNum);
+        }
+        else
+        {
+
+            SceneManager.LoadScene(dungeonSceneNum);
+            stateToLoad = state;
+        }
     }
     public void DungeonLoaded()
     {

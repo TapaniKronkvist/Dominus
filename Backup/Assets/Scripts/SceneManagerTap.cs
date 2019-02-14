@@ -9,7 +9,7 @@ public class SceneManagerTap : MonoBehaviour
 {
     public void StartNewGame()
     {
-        Application.LoadLevel("Overworld");
+        WorldManager.ins.LoadOverWorld();
     }
     public void Options()
     {
