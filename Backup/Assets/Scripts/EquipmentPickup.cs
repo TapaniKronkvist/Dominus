@@ -20,8 +20,9 @@ public class EquipmentPickup : Item
             
             Playermanager.ins.PickUpEquipment(equipment);
             Destroy(gameObject);
-        } else if (!Playermanager.ins.playerEquipment.Contains(equipment) && !CheckConflictingItems())
+        } else if (!Playermanager.ins.playerEquipment.Contains(equipment) && !CheckConflictingItems() && CollectionManager.ins != null)
         {
+            CollectionManager.ins.PickedUpItem(equipment);
             Playermanager.ins.PickUpEquipment(equipment);
             Destroy(gameObject);
         }

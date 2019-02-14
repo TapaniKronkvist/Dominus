@@ -144,7 +144,6 @@ MonoBehaviour:
       enemies:
       - {fileID: 1616504112002861960, guid: cc7c3f2a6fec91843a03ff845018fac3, type: 3}
       - {fileID: 1616504112002861960, guid: cc7c3f2a6fec91843a03ff845018fac3, type: 3}
-      - {fileID: 1616504112002861960, guid: cc7c3f2a6fec91843a03ff845018fac3, type: 3}
     - name: 
       enemies:
       - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
@@ -179,31 +178,21 @@ MonoBehaviour:
       enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
+    - name: 
+      enemies:
+      - {fileID: 1772057987, guid: 2c8756983ce906d48a0b5afcdec34f99, type: 3}
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
     - name: 
       enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-      - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 1772057987, guid: 2c8756983ce906d48a0b5afcdec34f99, type: 3}
     - name: 
       enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 1772057987, guid: 2c8756983ce906d48a0b5afcdec34f99, type: 3}
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
+      - {fileID: 1772057987, guid: 2c8756983ce906d48a0b5afcdec34f99, type: 3}
     - name: 
       enemies:
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-      - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-    - name: 
-      enemies: []
     - name: 
       enemies:
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
@@ -347,41 +336,13 @@ MonoBehaviour:
     - name: 
       enemies:
       - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
-      - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
-      - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
     - name: 
       enemies:
       - {fileID: 569722767513133790, guid: 7e5c1ea1e417c0742a39c0d6b517e003, type: 3}
       - {fileID: 1616504112002861960, guid: cc7c3f2a6fec91843a03ff845018fac3, type: 3}
-      - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
     - name: 
       enemies:
       - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
-      - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
-      - {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
-      - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
-      - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
-      - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 5775697172205747551, guid: 81029fa2d84cd16409db73d02677068a, type: 3}
-      - {fileID: 5775697172205747551, guid: 81029fa2d84cd16409db73d02677068a, type: 3}
-      - {fileID: 5775697172205747551, guid: 81029fa2d84cd16409db73d02677068a, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
-      - {fileID: 7834881726323524110, guid: b6904f77ea93ab846b133a5c7fec122d, type: 3}
   - name: nature
     itemDropTable:
     - {fileID: 11400000, guid: eb64beb9b294eeb4faab10824a9704d3, type: 2}
@@ -408,45 +369,31 @@ MonoBehaviour:
       enemies:
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-      - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
     - name: 
       enemies:
       - {fileID: 1772057987, guid: 2c8756983ce906d48a0b5afcdec34f99, type: 3}
       - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
-      - {fileID: 4466643427222198966, guid: bb6839fec892b6848990da2dec135ed2, type: 3}
     - name: 
       enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
     - name: 
       enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
+    - name: 
+      enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
     - name: 
       enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-    - name: 
-      enemies:
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
-      - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
     - name: 
       enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
       - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
-      - {fileID: 5458005408425466249, guid: 092450ce19dd9844cb49b55941d5d572, type: 3}
     - name: 
       enemies:
       - {fileID: 7839753791814044695, guid: e9fef0dc77374504ea7b12c12a9530b9, type: 3}
-      - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
       - {fileID: 3215989824754650527, guid: 4469784ca4d4a3d4bbc2778dfa35c842, type: 3}
     - name: 
       enemies:
