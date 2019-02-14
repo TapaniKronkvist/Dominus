@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     Pickup pickup;
-
+    [SerializeField]
+    ItemCollectionUI ui;
     [SerializeField]
     Pickup test;
     GameObject showObject;
@@ -18,6 +19,12 @@ public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
             Pickup = test;
         }
     }
+    private void OnMouseDown()
+    {
+        Debug.Log(pickup.itemName);
+        ui.SetText(pickup);
+    }
+
 
     public Pickup Pickup
     {
@@ -36,7 +43,7 @@ public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log(pickup.itemName);
+
     }
 
     public void OnPointerExit(PointerEventData eventData)
