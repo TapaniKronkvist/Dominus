@@ -112,6 +112,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &88995266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88995267}
+  - component: {fileID: 88995269}
+  - component: {fileID: 88995268}
+  m_Layer: 5
+  m_Name: HowToController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88995267
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88995266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1212367609}
+  - {fileID: 2144275275}
+  - {fileID: 1297914455}
+  m_Father: {fileID: 652989690}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88995268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88995266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 8bea7bfa5f749244ba1290324c9dab1f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &88995269
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88995266}
+  m_CullTransparentMesh: 0
 --- !u!1 &345327568
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +596,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &645251298
 GameObject:
@@ -691,8 +768,10 @@ RectTransform:
   - {fileID: 688600820}
   - {fileID: 345327569}
   - {fileID: 463975262}
+  - {fileID: 1447772733}
+  - {fileID: 88995267}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1115,6 +1194,170 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181949936}
   m_CullTransparentMesh: 0
+--- !u!1 &1212367608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212367609}
+  - component: {fileID: 1212367611}
+  - component: {fileID: 1212367610}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1212367609
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212367608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88995267}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -142, y: -148}
+  m_SizeDelta: {x: 146.9, y: 107.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1212367610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212367608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.990566, g: 0.9578586, b: 0.9578586, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 205
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Left Stick:
+
+    Move player
+
+    or
+
+    (W,A,S,D)'
+--- !u!222 &1212367611
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212367608}
+  m_CullTransparentMesh: 0
+--- !u!1 &1297914454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1297914455}
+  - component: {fileID: 1297914457}
+  - component: {fileID: 1297914456}
+  m_Layer: 5
+  m_Name: Text (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1297914455
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297914454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88995267}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -1.15, y: -56}
+  m_SizeDelta: {x: 157.7, y: 34.100006}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1297914456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297914454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: How to play
+--- !u!222 &1297914457
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297914454}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1316275185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1165,7 +1408,7 @@ PrefabInstance:
     - target: {fileID: 8698509201013852113, guid: 507dec24eabd1b745a8b364cff4986cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8698509201013852113, guid: 507dec24eabd1b745a8b364cff4986cf,
         type: 3}
@@ -1332,8 +1575,82 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1447772732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447772733}
+  - component: {fileID: 1447772735}
+  - component: {fileID: 1447772734}
+  m_Layer: 5
+  m_Name: HowToBackDrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1447772733
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447772732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 652989690}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1447772734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447772732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1447772735
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447772732}
+  m_CullTransparentMesh: 0
 --- !u!1 &1815337058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f5e984fd10015438f309cfd0be93f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2084096031
+--- !u!1001 &2074421931
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1519,17 +1836,17 @@ PrefabInstance:
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 115.96849
+      value: -21.052475
       objectReference: {fileID: 0}
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 105.08162
+      value: 12.522811
       objectReference: {fileID: 0}
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.005381
+      value: -21.871075
       objectReference: {fileID: 0}
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
@@ -1554,7 +1871,7 @@ PrefabInstance:
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4991226806766958950, guid: 8f672592e57684140b175dfa2389278e,
         type: 3}
@@ -1571,577 +1888,87 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[2].itemDropTable.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[0].itemDropTable.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.size
-      value: 49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[0].enemyGroups.Array.data[0].name
-      value: Goblins
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[2].itemDropTable.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[0].itemDropTable.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[9]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[10]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[11]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[12]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[13]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[14]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[15]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[16]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[17]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[18]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].itemDropTable.Array.data[19]
-      value: 
-      objectReference: {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].name
-      value: Turrets
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].name
-      value: Turrets
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[1].enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[2]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: overWorldStates.Array.data[2].enemyGroups.Array.data[0].enemies.Array.data[3]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 5437748966435270470, guid: 984b2483f0fbf134cb77a3ab4aad9fbb,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[0].enemies.Array.data[2]
-      value: 
-      objectReference: {fileID: 7264581897619750775, guid: 18c4d67ba04990f4ea7b4428cd01122f,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[2]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].enemyGroups.Array.data[1].enemies.Array.data[3]
-      value: 
-      objectReference: {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9,
-        type: 3}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[5]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[6]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[7]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[8]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[9]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[10]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[11]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[12]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[13]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[14]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[15]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[16]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[17]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[18]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[19]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[20]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[21]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[22]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[23]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[24]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[25]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[26]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[27]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[28]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[29]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[30]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[31]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[32]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[33]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[34]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[35]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[36]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[37]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[38]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[39]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[40]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[41]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[42]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[43]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[44]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[45]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[46]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[47]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
-    - target: {fileID: 4991226806766958949, guid: 8f672592e57684140b175dfa2389278e,
-        type: 3}
-      propertyPath: dungeonStates.Array.data[1].itemDropTable.Array.data[48]
-      value: 
-      objectReference: {fileID: 11400000, guid: fbbbe064201d16c4b89fba7380c2c819,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f672592e57684140b175dfa2389278e, type: 3}
+--- !u!1 &2144275274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2144275275}
+  - component: {fileID: 2144275277}
+  - component: {fileID: 2144275276}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2144275275
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144275274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 88995267}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 143, y: -146}
+  m_SizeDelta: {x: 130.59998, y: 110.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2144275276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144275274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: "Right Stick:\nShooting \ndirection\nor\n(Arrow keys)"
+--- !u!222 &2144275277
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144275274}
+  m_CullTransparentMesh: 0
 --- !u!1001 &7320794495630339449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2153,6 +1980,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SceneManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 1447772734}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 88995268}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 1212367610}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 2144275276}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: howTo
+      value: 
+      objectReference: {fileID: 1297914456}
+    - target: {fileID: 7320794493618194778, guid: 2e09c91e27c8af444a73477d498cded7,
+        type: 3}
+      propertyPath: waitTime
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7320794493618194781, guid: 2e09c91e27c8af444a73477d498cded7,
         type: 3}
@@ -2192,7 +2049,7 @@ PrefabInstance:
     - target: {fileID: 7320794493618194781, guid: 2e09c91e27c8af444a73477d498cded7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7320794493618194781, guid: 2e09c91e27c8af444a73477d498cded7,
         type: 3}

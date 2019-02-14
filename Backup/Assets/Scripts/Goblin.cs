@@ -26,14 +26,14 @@ public class Goblin : Enemy
         {
             if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) > range / 2)
             {
-                transform.LookAt(Playermanager.ins.playerObject.transform.position);
+                transform.LookAt(new Vector3 (Playermanager.ins.playerObject.transform.position.x, transform.position.y, Playermanager.ins.playerObject.transform.position.z));
                 transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
                 Shoot();
 
             }
             else if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) <= range / 2)
             {
-                transform.LookAt(Playermanager.ins.playerObject.transform.position);
+                transform.LookAt(new Vector3(Playermanager.ins.playerObject.transform.position.x, transform.position.y, Playermanager.ins.playerObject.transform.position.z));
                 transform.Translate(transform.forward * moveSpeed * Time.deltaTime * -1, Space.World);
                 Shoot();
             }

@@ -22,7 +22,7 @@ public class MeleeGoblin : Goblin
                 Debug.Log("Pre move");
                 if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
                 {
-                    transform.LookAt(Playermanager.ins.playerObject.transform.position);
+                    transform.LookAt(new Vector3(Playermanager.ins.playerObject.transform.position.x, transform.position.y, Playermanager.ins.playerObject.transform.position.z));
                     toPlayer = Playermanager.ins.playerObject.transform.position - transform.position;
                     transform.Translate(toPlayer.normalized * moveSpeed * Time.deltaTime, Space.World);
                     if (Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < meleeRange)
