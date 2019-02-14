@@ -118,10 +118,10 @@ public class WorldManager : MonoBehaviour
     {
 #if UNITY_EDITOR
 
-        if (Input.GetKey(KeyCode.Y))
-        {
-            DefeatBoss(Bosses.fire);
-        }
+        //if (Input.GetKey(KeyCode.Y))
+        //{
+        //    DefeatBoss(Bosses.fire);
+        //}
 #endif
     }
 

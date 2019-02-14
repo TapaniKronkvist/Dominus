@@ -23,9 +23,10 @@ public class bossSceneMusic : MonoBehaviour
             Destroy(firstTrack);
             secondTrack = Instantiate(musicTracks[1], transform.position, Quaternion.identity);
             spawner.ActivateBoss();
+            Camera.main.orthographicSize *= 2;
         }
 
-        Camera.main.orthographicSize *= 2;
+
     }
 
 }

@@ -93,7 +93,7 @@ public class Playermanager : MonoBehaviour
         {
             playerObject = GameObject.FindGameObjectWithTag("Player");
         }
-        if (Input.GetKey(KeyCode.F)) { }
+//        if (Input.GetKey(KeyCode.F)) { }
 
     }
 

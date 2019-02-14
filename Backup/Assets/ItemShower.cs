@@ -12,13 +12,7 @@ public class ItemShower : MonoBehaviour
     [SerializeField]
     Pickup test;
     GameObject showObject;
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Pickup = test;
-        }
-    }
+
     private void OnMouseDown()
     {
         if (pickup != null)
