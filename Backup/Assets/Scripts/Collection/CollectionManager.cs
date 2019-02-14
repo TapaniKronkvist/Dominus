@@ -28,6 +28,7 @@ public class CollectionManager : MonoBehaviour
         {
             CollectionManager.ins = this;
             DontDestroyOnLoad(gameObject);
+            LoadItemsFromFile();
         }
         else Destroy(gameObject);
     }
