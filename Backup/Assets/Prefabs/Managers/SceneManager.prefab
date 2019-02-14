@@ -48,4 +48,4 @@ MonoBehaviour:
   left: {fileID: 0}
   right: {fileID: 0}
   howTo: {fileID: 0}
-  waitTime: 12
+  waitTime: 20

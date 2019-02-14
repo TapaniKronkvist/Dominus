@@ -1011,11 +1011,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   damage: 0
-  knockBackForce: 0
-  stunTime: 0
+  knockBackForce: 25
+  stunTime: 1
   moveSpeed: 4
-  shootRange: 0
-  nrOfShots: 1
+  shootRange: 20
+  nrOfShots: 3
   offsetAngle: 5
   projectilePrefab: {fileID: 5424248405917016573, guid: 10d23b9ace930a845b8df75bf31eee1f,
     type: 3}

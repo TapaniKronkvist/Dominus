@@ -18,9 +18,11 @@ MonoBehaviour:
   description: 'Legend has it the dominus cult used this spell to lay waste to the
     land, destroying everything in its path
 
+    (if you found this you''re lucky)
+
     ---
 
-    Increases damage by 100%'
+    Increases damage by 300%'
   conflictingItems: []
   allowDuplicates: 0
-  modifier: 2
+  modifier: 4

@@ -170,7 +170,6 @@ public class Playermanager : MonoBehaviour
     {
         
         yield return new WaitForSeconds(waitTime);
-
         Destroy(WorldManager.ins.gameObject);
         CollectionManager.ins.AddCollectedToCollection();
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameOverSceneNumber);

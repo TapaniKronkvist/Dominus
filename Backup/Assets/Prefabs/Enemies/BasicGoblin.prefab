@@ -109,8 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   damage: 1
-  knockBackForce: 1
-  stunTime: 1
+  knockBackForce: 25
+  stunTime: 0.1
   moveSpeed: 3
   range: 30
   arrowPrefab: {fileID: 5424248405917016573, guid: 10d23b9ace930a845b8df75bf31eee1f,
