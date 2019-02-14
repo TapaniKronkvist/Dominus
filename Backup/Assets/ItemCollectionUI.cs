@@ -21,6 +21,10 @@ public class ItemCollectionUI : MonoBehaviour
     {
         if (page >= 0 && page * ShowerNumber +1 <= items.Count)
         {
+            for (int i = 0; i < showers.Count; i++)
+            {
+                showers[i].ClearShowers();
+            }
             currentPage = page;
             for (int i = 0; i < ShowerNumber; i++)
             {

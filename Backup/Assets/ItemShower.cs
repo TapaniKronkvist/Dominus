@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ItemShower : MonoBehaviour
 {
     Pickup pickup;
     [SerializeField]
@@ -21,17 +21,23 @@ public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     }
     private void OnMouseDown()
     {
-        Debug.Log(pickup.itemName);
-        ui.SetText(pickup);
+        if (pickup != null)
+        {
+            Debug.Log(pickup.itemName);
+            ui.SetText(pickup);
+        }
     }
-
+    public void ClearShowers()
+    {
+        Destroy(showObject);
+    }
 
     public Pickup Pickup
     {
         get => pickup;
         set
         {
-            Debug.Log(value.itemName);
+
             Destroy(showObject);
             showObject = Instantiate(value.WorldObject, transform);
             showObject.transform.position = transform.position;
@@ -41,13 +47,4 @@ public class ItemShower : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-
-    }
 }
