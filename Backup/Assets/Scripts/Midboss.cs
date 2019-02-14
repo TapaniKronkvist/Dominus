@@ -22,6 +22,8 @@ public class Midboss : Enemy
     Vector3 toTarget;
     Transform target;
 
+    [SerializeField]
+    GameObject deathObject;
 
     public override void Start()
     {
@@ -82,9 +84,22 @@ public class Midboss : Enemy
         }
     }
 
+    public override void Death()
+    {
+        if (deathObject != null)
+        {
+           GameObject deathObj = Instantiate(deathObject);
+            deathObj.transform.position = transform.position;
+            Destroy(gameObject);
+        }
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+
+
 }

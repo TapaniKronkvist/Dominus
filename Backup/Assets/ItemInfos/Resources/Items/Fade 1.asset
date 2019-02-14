@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7867baef0577d944599dc1b6ff6cb1dc, type: 3}
+  m_Name: Fade 1
+  m_EditorClassIdentifier: 
+  worldObject: {fileID: 4674728177105566265, guid: 557dd076e83d2b54a8dcf6ca057fb66d,
+    type: 3}
+  itemName: Flaming Fade
+  description: '
+
+    ---
+
+    Increases the time of the invulnerability time after taking damage by 10%'
+  conflictingItems: []
+  allowDuplicates: 0
+  modifier: 1.1

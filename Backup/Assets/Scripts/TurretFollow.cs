@@ -40,8 +40,11 @@ public class TurretFollow : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        Vector3 offseetAdj = Quaternion.Euler(0, objToFollow.transform.eulerAngles.y, 0) * offset;
-        
-        Gizmos.DrawWireSphere(objToFollow.transform.position +  offseetAdj, .5f);
+        if (objToFollow != null)
+        {
+            Vector3 offseetAdj = Quaternion.Euler(0, objToFollow.transform.eulerAngles.y, 0) * offset;
+
+            Gizmos.DrawWireSphere(objToFollow.transform.position + offseetAdj, .5f);
+        }
     }
 }

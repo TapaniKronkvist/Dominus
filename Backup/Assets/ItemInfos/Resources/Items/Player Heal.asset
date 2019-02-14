@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f4c4b442a68f04b81f42cdb928021e, type: 3}
   m_Name: Player Heal
   m_EditorClassIdentifier: 
-  worldObject: {fileID: 2773347304966287247, guid: db954f112cee4104bae6b443ee309856,
+  worldObject: {fileID: 8235806591440396401, guid: 834b8a08fc40ed54d8cbf410142ffc88,
     type: 3}
-  itemName: 
-  description: 
-  healAmount: 1
-  ignoreMaxHP: 0
+  itemName: Extra Health
+  description: 'Potion able to increase ones lifeforce beyond the usual limits
+
+
+    ---
+
+    Gives 2 HP, Ignores Max HP'
+  healAmount: 2
+  ignoreMaxHP: 1
