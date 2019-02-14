@@ -43,3 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f5e984fd10015438f309cfd0be93f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 0}
+  controller: {fileID: 0}
+  left: {fileID: 0}
+  right: {fileID: 0}
+  howTo: {fileID: 0}
+  waitTime: 12
