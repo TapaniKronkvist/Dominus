@@ -96,7 +96,7 @@ MonoBehaviour:
     type: 3}
   stoneBoss: {fileID: 6922850660888181634, guid: 0a2c3f6eb9a65094ca05ef128537f5de,
     type: 3}
-  magnusBoss: {fileID: 0}
+  magnusBoss: {fileID: 100002, guid: ea658a5fece75a84eadb890337b746fd, type: 3}
   dungeonStates:
   - name: Fire Dungeon
     itemDropTable: []
@@ -133,9 +133,15 @@ MonoBehaviour:
   - name: neutral
     itemDropTable: []
     enemyGroups:
-    - name: 
+    - name: 2mel1Basic
       enemies:
       - {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578, type: 3}
+      - {fileID: 5775697172205747551, guid: 81029fa2d84cd16409db73d02677068a, type: 3}
+      - {fileID: 5775697172205747551, guid: 81029fa2d84cd16409db73d02677068a, type: 3}
+    - name: 1Basic1Trip
+      enemies:
+      - {fileID: 8032754563448082781, guid: 0c6431f9d9ab05045b89be1d46301578, type: 3}
+      - {fileID: 8748183477556794522, guid: eaf5c49f681845f4eb93288a599151b9, type: 3}
   - name: fire
     itemDropTable:
     - {fileID: 11400000, guid: f2e4797be38a0f9498fc48e4ee9f12a6, type: 2}

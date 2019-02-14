@@ -111,6 +111,7 @@ MonoBehaviour:
   speed: 6
   damage: 1
   knockback: 0
+  stunTime: 0
   lookDir: {x: 0, y: 0, z: 0}
 --- !u!54 &249324375179056291
 Rigidbody:
