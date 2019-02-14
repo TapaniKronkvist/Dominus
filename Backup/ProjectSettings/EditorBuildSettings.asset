@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Collection.unity
     guid: e16dce939c69aa643b9330f31709d5e6
   - enabled: 1
+    path: Assets/ItemCollectionTest.unity
+    guid: ea7ca35a3a931d64685af405b122ab16
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: cb490a1e9f114994e852d0fa1f10d543
   - enabled: 1

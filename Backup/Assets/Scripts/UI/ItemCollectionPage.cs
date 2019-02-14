@@ -6,6 +6,6 @@ public class ItemCollectionPage : MonoBehaviour
 {
  public void itemPage()
     {
-        Application.LoadLevel("Overworld");
+        Application.LoadLevel("ItemCollectionTest");
     }
 }
