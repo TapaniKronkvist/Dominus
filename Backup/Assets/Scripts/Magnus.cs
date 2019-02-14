@@ -5,7 +5,7 @@ using UnityEngine;
 public class Magnus : Enemy
 {
     public float moveSpeed;
-    public float range;
+    public float shootRange;
     [SerializeField]
     float nrOfShots;
     [SerializeField]
@@ -17,8 +17,8 @@ public class Magnus : Enemy
     protected float cooldown;
     [SerializeField]
     Transform firePoint;
-    [SerializeField]
-    Vector3 playeroffset;
+    //[SerializeField]
+    //Vector3 playeroffset;
 
     // Start is called before the first frame update
     public override void Start()
@@ -30,14 +30,13 @@ public class Magnus : Enemy
     // Update is called once per frame
     void Update()
     {
-        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < range)
+        
+        if (Playermanager.ins.playerObject != null && Vector3.Distance(transform.position, Playermanager.ins.playerObject.transform.position) < shootRange)
         {
-            transform.LookAt(Playermanager.ins.playerObject.transform.position + playeroffset);
             Shoot();
         }
         else if (Playermanager.ins.playerObject != null)
         {
-            transform.LookAt(Playermanager.ins.playerObject.transform.position + playeroffset);
         }
         if (cooldown <= cooldownMax)
         {
@@ -75,6 +74,6 @@ public class Magnus : Enemy
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, range);
+        Gizmos.DrawWireSphere(transform.position, shootRange);
     }
 }
