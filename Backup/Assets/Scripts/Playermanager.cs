@@ -169,7 +169,11 @@ public class Playermanager : MonoBehaviour
     IEnumerator Dying(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+
+        Destroy(WorldManager.ins.gameObject);
+        CollectionManager.ins.AddCollectedToCollection();
         UnityEngine.SceneManagement.SceneManager.LoadScene(gameOverSceneNumber);
+        Destroy(Playermanager.ins.gameObject);
     }
 
     public void Heal(int healAmount)

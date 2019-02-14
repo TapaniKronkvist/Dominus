@@ -26,12 +26,16 @@ public class SceneManagerTap : MonoBehaviour
     }
     public void StartNewGame()
     {
+
+        WorldManager.ins.LoadOverWorld();
+
         howTo.enabled = true;
         left.enabled = true;
         right.enabled = true;
         background.enabled = true;
         controller.enabled = true;
         Invoke("StartNow", waitTime * Time.deltaTime);
+
 
     }
     public void Options()
