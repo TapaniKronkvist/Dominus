@@ -23,11 +23,11 @@ public class VineShot : Arrow
     {
         if (lookDir != Vector3.zero && !strtSpd)
         {
-            Debug.Log(";)");
+          //  Debug.Log(";)");
             strtSpd = true;
             rb.velocity = startSpeed * lookDir;
         }
-        else Debug.Log("No ;)");
+//        else Debug.Log("No ;)");
         if (pm == null) pm = Playermanager.ins;
         if (playerObject == null)
         {

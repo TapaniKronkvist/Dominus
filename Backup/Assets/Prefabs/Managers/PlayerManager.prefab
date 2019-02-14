@@ -56,7 +56,7 @@ MonoBehaviour:
   playerEquipment: []
   selectedElemen: 3
   gameOverSceneNumber: 8
-  maxHP: 3
+  maxHP: 5
   currentHP: 0
   basePostDamageInvulTime: 1
   baseTimeBetweenShots: 0.5

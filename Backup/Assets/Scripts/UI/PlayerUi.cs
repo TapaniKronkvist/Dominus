@@ -8,6 +8,8 @@ public class PlayerUi : MonoBehaviour
     
     Image createHeart;
     public Image heart;
+    public Image maxHeart;
+    public List<Image> maxHearts;
     Playermanager getPlayerInfo;
     public List<Image> currentHearts;
     [SerializeField] int playerHp;
@@ -29,7 +31,7 @@ public class PlayerUi : MonoBehaviour
     void Update()
     {
         
-        if (player != null)
+        if (getPlayerInfo != null)
         {
             hp = getPlayerInfo.CurrentHP;
             hpChange = hp;
@@ -42,21 +44,38 @@ public class PlayerUi : MonoBehaviour
     }
     public void UpdateHealth(int hp)
     {
+        foreach (var item in maxHearts)
+        {
+            Destroy(item);
+        }
+
         foreach (var item in currentHearts)
         {
             Destroy(item);
         }
         currentHearts = new List<Image>();
-        x = 25;
+        x = 50;
+
+        for (int i = 0; i < Playermanager.ins.MaxHP; i++)
+        {
+            createHeart = Instantiate(maxHeart) as Image;
+            maxHearts.Add(createHeart);
+            createHeart.transform.SetParent(transform, false);//keeps local pos
+            xOffset = createHeart.transform.position;
+            xOffset.x += x * i;
+            createHeart.transform.position = xOffset;
+
+        }
+
         for (int i = 0; i < hp; i++)
         {
             createHeart = Instantiate(heart) as Image;
             currentHearts.Add(createHeart);
             createHeart.transform.SetParent(transform, false);//keeps local pos
             xOffset = createHeart.transform.position;
-            xOffset.x += x;
+            xOffset.x += x * i;
             createHeart.transform.position = xOffset;
-            x += 50;
+          //  x += 50;
         }
         playerHp = hpChange;
     }

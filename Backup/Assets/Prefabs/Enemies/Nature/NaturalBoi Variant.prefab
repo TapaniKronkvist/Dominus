@@ -7,10 +7,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: arrowPrefab
+      value: 
+      objectReference: {fileID: 610938010677229104, guid: a50c9f795c7b2ba44af8947c14f7b89f,
+        type: 3}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: moveSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: cooldownMax
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7885066692775355657, guid: 925352b9391a5f9488fd05d87011361d,
         type: 3}
       propertyPath: m_Name
-      value: NaturalBoi
+      value: NaturalBoi Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
         type: 3}
@@ -77,18 +90,5 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c14a72e81bdf9df498998acf78204c24, type: 2}
-    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
-      propertyPath: arrowPrefab
-      value: 
-      objectReference: {fileID: 1799569945992340469, guid: 8d1dfadaee2d9a340a772cffadfa24ea,
-        type: 3}
-    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
-      propertyPath: moveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
-      propertyPath: cooldownMax
-      value: 1.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 925352b9391a5f9488fd05d87011361d, type: 3}

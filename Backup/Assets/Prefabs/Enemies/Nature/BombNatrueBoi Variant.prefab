@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c72418bc851e2e4eb0ca6a5565c2918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombTimer: 3
-  timeBetweenBombs: 0.8
+  bombTimer: 4
+  timeBetweenBombs: 1.2
   bombDamage: 1
   bomb: {fileID: 8908267091123175407, guid: 861df4ae7eb4568409edec11d39492b8, type: 3}
   shouldDrop: 1
@@ -50,7 +50,11 @@ PrefabInstance:
     - target: {fileID: 7885066692775355657, guid: 925352b9391a5f9488fd05d87011361d,
         type: 3}
       propertyPath: m_Name
-      value: BombNatrueBoi
+      value: BombNatrueBoi Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579504138, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
+      propertyPath: m_Mass
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7885066692775393577, guid: 925352b9391a5f9488fd05d87011361d,
         type: 3}
@@ -132,10 +136,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c14a72e81bdf9df498998acf78204c24, type: 2}
-    - target: {fileID: 1579504138, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1579504136, guid: 925352b9391a5f9488fd05d87011361d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 925352b9391a5f9488fd05d87011361d, type: 3}

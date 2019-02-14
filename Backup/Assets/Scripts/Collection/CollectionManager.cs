@@ -46,25 +46,29 @@ public class CollectionManager : MonoBehaviour
         fs.Close();
 
     }
-   public void LoadItemsFromFile()
+    public void LoadItemsFromFile()
     {
-        FileStream fs = new FileStream("ItemCollection", FileMode.Open);
-        XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<string>));
-        List<string> strings = xmlSerializer.Deserialize(fs) as List<string>;
-        itemPaths = strings;
-        fs.Close();
-        for (int i = 0; i < itemPaths.Count; i++)
+        if (File.Exists("ItemCollection"))
         {
-            if (Resources.Load(itemLoc + "/" + itemPaths[i]))
+            FileStream fs = new FileStream("ItemCollection", FileMode.Open);
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<string>));
+            List<string> strings = xmlSerializer.Deserialize(fs) as List<string>;
+            itemPaths = strings;
+            fs.Close();
+            for (int i = 0; i < itemPaths.Count; i++)
             {
-                Pickup pickup = Resources.Load(itemLoc + "/" + itemPaths[i]) as Pickup;
-                if (!collectedItems.Contains(pickup))
+                if (Resources.Load(itemLoc + "/" + itemPaths[i]))
                 {
-                    collectedItems.Add(pickup);
-                }
+                    Pickup pickup = Resources.Load(itemLoc + "/" + itemPaths[i]) as Pickup;
+                    if (!collectedItems.Contains(pickup))
+                    {
+                        collectedItems.Add(pickup);
+                    }
 
+                }
             }
         }
+        else Debug.Log("No file");
 
     }
 

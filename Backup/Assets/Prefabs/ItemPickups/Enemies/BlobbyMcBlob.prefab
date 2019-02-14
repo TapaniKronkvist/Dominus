@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29529c17461fb2c419ac2ca57856b3cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 6
   damage: 1
   knockBackForce: 25
   stunTime: 0.5

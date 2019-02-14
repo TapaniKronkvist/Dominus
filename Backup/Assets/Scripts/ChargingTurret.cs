@@ -62,11 +62,12 @@ public class ChargingTurret : TurretEnemy
             RaycastHit hit;
             if (Physics.Raycast(bulletExitPoint.transform.position, bulletExitPoint.transform.forward, out hit, Mathf.Infinity,mask ))
             {
-                beam.SetPosition(1, Vector3.Lerp(beam.GetPosition(1), hit.point, beamMoveSpeed * Time.deltaTime));
+                beam.SetPosition(1, hit.point);
                 beam.gameObject.SetActive(true);
 
                 hitEffect.transform.position = hit.point;
                 hitEffect.transform.rotation = Quaternion.LookRotation(hit.normal);
+       //         beam.SetPosition(1, Vector3.Lerp(beam.GetPosition(1), hit.point, beamMoveSpeed * Time.deltaTime));
                 hitEffect.Play();
                 shootEffect.Play();
                 startLight.enabled = true;
@@ -83,6 +84,7 @@ public class ChargingTurret : TurretEnemy
 
             } else
             {
+
                 beam.gameObject.SetActive(false);
                 hitEffect.Stop();
                 startLight.enabled = false;
@@ -115,7 +117,7 @@ public class ChargingTurret : TurretEnemy
             projectilesLeft = projectiles;
             charged = true;
             //     chargeEffect.gameObject.SetActive(false);
-            beam.SetPosition(1, bulletExitPoint.transform.position);
+  //          beam.SetPosition(1, bulletExitPoint.transform.position);
             charging = false;
             Debug.Log("Done");
 

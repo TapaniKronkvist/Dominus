@@ -138,10 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -178,6 +178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heart: {fileID: 841438379951941683, guid: 4b9f1f06a26518a48bdf74812cc888dd, type: 3}
+  maxHeart: {fileID: 6908465192947904243, guid: cda63cd3fc7518c40aace9af64e7dbc5,
+    type: 3}
+  maxHearts: []
   currentHearts: []
   playerHp: 0
 --- !u!1 &7820713486336772289

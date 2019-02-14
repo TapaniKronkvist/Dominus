@@ -9667,7 +9667,7 @@ MonoBehaviour:
   startLight: {fileID: 5437748966894387721}
   chargeTime: 3
   postShootWait: 1
-  shootTime: 2
+  shootTime: 1
   beamMoveSpeed: 15
   mask:
     serializedVersion: 2
