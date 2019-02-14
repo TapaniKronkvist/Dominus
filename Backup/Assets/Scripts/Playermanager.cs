@@ -168,6 +168,7 @@ public class Playermanager : MonoBehaviour
 
     IEnumerator Dying(float waitTime)
     {
+        UIWinCondition.EnableGameOverSplash();
         yield return new WaitForSeconds(waitTime);
 
         Destroy(WorldManager.ins.gameObject);
