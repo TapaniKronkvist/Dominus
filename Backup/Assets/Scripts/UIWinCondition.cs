@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class UIWinCondition : MonoBehaviour
 {
-    public static Image panel;
-    public static Text gameOver;
-    public static Text victory;
+    public Image panel;
+    public Text gameOver;
+    public Text victory;
 
      // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class UIWinCondition : MonoBehaviour
         victory.enabled = false; 
     }
 
-    public static void EnableGameOverSplash()
+    public void EnableGameOverSplash()
     {
         panel.enabled = true;
         gameOver.enabled = true;
