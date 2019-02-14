@@ -49,7 +49,7 @@ public class MeleeGoblin : Goblin
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, meleeRange);
+        Gizmos.DrawWireSphere(transform.position, range);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, meleeRange);
     }
